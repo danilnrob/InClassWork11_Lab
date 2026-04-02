@@ -113,3 +113,19 @@ public:
         return *this;
     }
 };
+
+int main() {
+    NodeList list;
+    list.addNode(1, "Cat");
+    list.addNode(2, "Dog");
+    list.addNode(3, "Birby");
+
+    cout << "Original list: ";
+    list.display();
+
+    list.removeNode(2); // Remove Dog
+    cout << "After removing Dog: ";
+    list.display();
+
+    return 0;
+}

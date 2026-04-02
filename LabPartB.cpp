@@ -74,3 +74,19 @@ public:
  - Part A we utilized the Rule of Three, while in Part B we did not have to because we used a smart pointer instead. This
    means we do not need to use the Rule of Three at all. 
 */
+
+int main() {
+    SmartNodeList list;
+    list.addNode(1, "Cat");
+    list.addNode(2, "Dog");
+    list.addNode(3, "Birby");
+
+    cout << "Original list: ";
+    list.display();
+
+    list.removeNode(2); // Remove Dog
+    cout << "After removing Dog: ";
+    list.display();
+
+    return 0;
+}
